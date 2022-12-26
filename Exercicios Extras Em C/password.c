@@ -1,5 +1,5 @@
 /**
- * Faça um algoritmo para ler um número que é um código de usuário.
+   Faça um algoritmo para ler um número que é um código de usuário.
 
 Caso este código seja diferente de um código armazenado internamente no algoritmo (igual a 1234) deve ser apresentada a mensagem "Usuário inválido!" e o sistema será encerrado.
 
@@ -16,31 +16,37 @@ Se a senha estiver incorreta deve ser exibida a mensagem "Senha incorreta", e ta
 #include <stdio.h>
 #include <stdlib.h>
 
-int password(){
+void AskAndVerifyPassword(){
 
-    int password = 9999, code = 1234, usercode, userpassword, choice, op;
-
-    printf("Press your user number\n");
-    scanf("%d",&usercode);
-
-    if(usercode == code)
+    int password, userpassword = 9999, op;
     do{
-     printf("type your password: "); scanf("%d",&userpassword);
+     printf("type your password: "); scanf("%d",&password);
      if(password == userpassword){
      printf("allowed access!");
      op = 0;}
      else{
-     printf("invalid Password!\n 1 - try again\n 0 - stop system\n");
+     printf("invalid Password!\n\n 1 - try again\n 0 - stop system\n");
      scanf("%d",&op); 
      }
      
     }while(op != 0);
-    else
-    printf("invalid user!");
+}
+
+int AskTheUserNumber(){
+
+    int usercode;
+    printf("press your user number: ");
+    scanf("%d",&usercode);
+    return usercode;
 }
 
 int main(){
 
-password();
+  int usercode, code = 1234;
 
+  usercode = AskTheUserNumber();
+  if(usercode == code)
+  AskAndVerifyPassword();
+  else
+    printf("invalid user!");
 }
