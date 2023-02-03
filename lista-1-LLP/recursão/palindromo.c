@@ -5,11 +5,10 @@
 
 int palindroma(char str[])
 {
-    if (strlen(str) == 1)
+    if (strlen(str) - 1 == 1)
         return TRUE;
     else if (str[0] != str[strlen(str) - 1])
         return FALSE;
-
     char dest[strlen(str)];
     strncpy(&dest, &str[1], strlen(str) - 2);
     strcpy(str,dest);
@@ -18,10 +17,10 @@ int palindroma(char str[])
 
 int main()
 {
-    char str[5] = {"rotor"};
+    char str[5] = {"moom"};
 
     if (palindroma(str) == TRUE)
         printf("the string is a palindroma (:");
     else
-        printf("the string is'nt a pa if palindroma ):");
+        printf("the string is'nt a palindroma ):");
 }
