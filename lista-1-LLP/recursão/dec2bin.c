@@ -10,14 +10,10 @@ void binary(int vet[], int index, int aux){
 }
  
 void main(){
-    int aux, index, binario[8];
+    int aux, index, binario[8] = {0};
 
     printf("type a denary value: "); scanf("%d",&aux);
     
-
-    for(index = 0; index < 7; index++)
-     binario[index] = 0;
-
     binary(binario, 7, aux);
 
     for(aux = 0; aux < 8; aux++)
