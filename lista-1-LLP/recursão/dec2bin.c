@@ -10,12 +10,16 @@ void binary(int binaryVetor[], int index, int denary){
 }
  
 void main(){
-    int denary, index, binario[8] = {0};
+    int i, x, n = 1, denary = 0, index, binario[8] = {0};
+    //   printf("type a denary value: "); scanf("%d",&denary);
 
-    printf("type a denary value: "); scanf("%d",&denary);
-    
-    binary(binario, 7, denary);
-
-    for(denary = 0; denary < 8; denary++)
-        printf("%d", binario[denary]);
+    for(; denary <= 255; denary++){
+        binary(binario, 7, denary);
+      for(x = 0; x < 8; x++){
+        printf("%d", binario[x]);
 }
+    printf(" com 'Decimal' de [%d]", denary);
+    printf("\n");
+    }
+}
+
