@@ -8,7 +8,7 @@ int palindroma(char str[])
     if (strlen(str) == 1)
         return TRUE;
     if (strlen(str) == 2) {
-       if(str[0] == str[strlen(str) - 1])
+       if (str[0] == str[strlen(str) - 1])
            return TRUE;
     }
     if (str[0] != str[strlen(str) - 1])
