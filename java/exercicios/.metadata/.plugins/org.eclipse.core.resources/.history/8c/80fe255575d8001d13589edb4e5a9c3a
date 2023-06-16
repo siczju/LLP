@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int anos, anos_dias = 365, meses, meses_dias = 30, dias;
+		
+		System.out.println("Diga-me sua data de nascimento(anos, meses, dias): "); 
+		Scanner scanf = new Scanner(System.in);
+		
+		 anos = scanf.nextInt();
+		 meses = scanf.nextInt();
+		 dias = scanf.nextInt();
+		 
+		 anos = 2023 - anos;
+		 meses = 12 - meses;
+		 
+		 anos *= anos_dias;
+		 meses *= meses_dias;
+		 
+		 System.out.println("O total de dias da sua vida e: " + (dias + meses + anos));
+		 
+	}
+
+}

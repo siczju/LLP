@@ -1,0 +1,20 @@
+import src.Carros;
+
+public class Aula04 {
+
+	public static void main(String[] args) {
+		Caneta c1 = new Caneta("BIC", "Amarela", 0.4f);
+		 c1.status();
+		 
+			Car Fusca = new Car();
+			Car Corsa = new Car("Vermelho");
+			Car Gol = new Car(5);
+			Car Opala = new Car(4, "Cinza");
+			
+			System.out.println("Fuscao: " + Fusca.GetRodas() + Fusca.GetCor());
+			System.out.println("Corsao: " + Corsa.GetCor());
+			System.out.println("Golzao: " + Gol.GetRodas());
+			System.out.println("Opalao: " + Opala.GetCor() + Opala.GetRodas());
+	}
+
+}

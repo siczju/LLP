@@ -1,0 +1,5 @@
+INDEX VERSION 1.132+C:\Users\Julin\OneDrive\Área de Trabalho\github\LLP\java\exercicios\.metadata\.plugins\org.eclipse.jdt.core
+1376188900.index
+1027600823.index
+1245233441.index
+1865797976.index

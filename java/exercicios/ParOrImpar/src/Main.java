@@ -13,6 +13,7 @@ public class Main {
 		disaster.number = scan.nextInt();
 		
 		disaster.verifyTheNumber();
+		scan.close();
 	}
 
 }

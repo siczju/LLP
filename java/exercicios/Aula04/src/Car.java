@@ -1,6 +1,6 @@
 
 public class Car {
-	private int Rodas;
+	private int rodas;
 	private String Cor;
 
 	public Car() {
@@ -8,7 +8,7 @@ public class Car {
 	}
 	// Getters
 	public int GetRodas() {
-		return this.Rodas;
+		return this.rodas;
 	}
 
 	public String GetCor() {
@@ -21,6 +21,6 @@ public class Car {
 	}
 
 	public void SetRodas(int rodas) {
-		this.Rodas = rodas;
+		this.rodas = rodas;
 	}
 }

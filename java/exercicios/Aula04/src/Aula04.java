@@ -11,7 +11,7 @@ public class Aula04 {
 			Car Opala = new Car(4, "Cinza");*/
 			Car Gol = new Car();
 			
-			Gol.Rodas = 4;
+			Gol.SetRodas(4); 
 			
 			System.out.println(Gol.GetRodas());
 			

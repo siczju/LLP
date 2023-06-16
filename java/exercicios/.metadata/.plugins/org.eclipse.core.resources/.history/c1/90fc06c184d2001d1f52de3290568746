@@ -1,0 +1,39 @@
+package Carros;
+
+public class Car {
+    public int Rodas;
+    public String cor;
+    
+    public Car(){
+        this.SetCor("Azul");
+        this.SetRodas(3);
+    }
+    
+    public Car(int rodas){
+        this.SetRodas(rodas);
+    }
+    
+        public Car(String cor){
+        this.SetCor(cor);
+    }
+    
+public Car(int rodas, String cor){
+        this.SetRodas(rodas);
+        this.SetCor(cor);
+    }
+    
+    public int GetRodas(){
+        return this.Rodas;
+    }
+        public String GetCor(){
+        return this.cor;
+    }
+    
+            public void SetCor(String cor){
+        this.cor = cor;
+    }
+    
+                public void SetRodas(int rodas){
+        this.Rodas = rodas;
+    }
+}

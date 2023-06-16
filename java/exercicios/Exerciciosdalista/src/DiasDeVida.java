@@ -12,12 +12,13 @@ public class DiasDeVida {
 		 anos = scanf.nextInt();
 		 meses = scanf.nextInt();
 		 dias = scanf.nextInt();
-		 
+
 		 anos *= anos_dias;
 		 meses = 12 - meses;
 		 meses *= meses_dias;
 		 
 		 System.out.println("O total de dias da sua vida e: " + (dias + meses + anos));
+		 scanf.close();
 		 
 	}
 
