@@ -13,6 +13,7 @@ void main()
     struct horario agora, *depois;
     depois = &agora;
 
+//  (*depois).hora = 20;
     depois->hora = 20;    // ou (*depois).hora = 20;
     depois->minuto = 12;  // ou (*depois).minuto = 12;
     depois->segundo = 16; // ou (*depois).segundo = 16;
