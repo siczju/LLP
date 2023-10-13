@@ -54,7 +54,9 @@ public class Main {
 		int usercode;
 
 		System.out.println("|- - - - - - - -|");
-		System.out.println("| 1 - Aluno     |\n| 2 - Professor |\n| 3 - Sair      |");
+		System.out.println("| 1 - Aluno     |\n" +
+						   "| 2 - Professor |\n" +
+						   "| 3 - Sair      |");
 		System.out.println("|- - - - - - - -|\n");
 		System.out.printf("Selecione: (1 - 2): \n");
 
